@@ -1,11 +1,11 @@
 package pattern.singleton;
 
 public class India implements Country{
-
+	
 	private static volatile India india = null;
 	
 	private India() {
-		System.out.println(Country.class.getName());
+		System.out.println(India.class.getName());
 	}
 	
 	public static India getIndia() {

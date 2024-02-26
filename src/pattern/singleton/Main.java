@@ -23,6 +23,7 @@ public class Main {
     public static void readKeyFromConsoleAndInitCountry() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String consoleInput = reader.readLine();
+        
         switch (consoleInput) {
             case Country.RUSSIA:
                 country = Russia.getRussia();
@@ -38,6 +39,9 @@ public class Main {
             	break;
             case Country.ARGENTINA:
             	country = Argentina.getArgentina();
+            	break;
+            case Country.CANADA:
+            	country = Canada.getCanada();
             	break;
             default:
                 country = null;
